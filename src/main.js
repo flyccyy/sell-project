@@ -3,9 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueResource from 'vue-resource'
+
+// 引入所有样式
+import "./common/less/index.less"
 
 Vue.config.productionTip = false
 
+Vue.use(VueResource)  //相当于全局注册
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
